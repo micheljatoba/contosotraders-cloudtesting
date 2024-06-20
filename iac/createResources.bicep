@@ -1299,7 +1299,7 @@ resource aks 'Microsoft.ContainerService/managedClusters@2022-10-02-preview' = {
         name: 'agentpool'
         osDiskSizeGB: 0 // Specifying 0 will apply the default disk size for that agentVMSize.
         count: 1
-        vmSize: 'Standard_E8ds_v5'
+        vmSize: 'Standard_D4s_v3'
         osType: 'Linux'
         mode: 'System'
       }
@@ -1454,7 +1454,7 @@ resource jumpboxvm 'Microsoft.Compute/virtualMachines@2022-08-01' =
     tags: resourceTags
     properties: {
       hardwareProfile: {
-        vmSize: 'Standard_E8ds_v5'
+        vmSize: 'Standard_D4s_v3'
       }
       storageProfile: {
         osDisk: {
