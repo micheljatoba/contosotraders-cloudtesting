@@ -24,8 +24,6 @@ param suffix string
   'uksouth'
   'westcentralus'
   'westeurope'
-  'westus3'
-  'brazilsouth'
 ])
 param rgLocation string
 
